@@ -31,9 +31,11 @@ end)
 -- set up your windowfilter
 switcher = hs.window.switcher.new() -- default windowfilter: only visible windows, all Spaces
 switcher_space = hs.window.switcher.new(hs.window.filter.new():setCurrentSpace(true):setDefaultFilter{}) -- include minimized/hidden windows, current Space only
-switcher_browsers = hs.window.switcher.new{'Safari','Google Chrome'} -- specialized switcher for your dozens of browser windows :)
+-- switcher_browsers = hs.window.switcher.new{'Safari','Google Chrome'} -- specialized switcher for your dozens of browser windows :)
 
 switcher.ui.textsize = 10
+switcher.ui.showThumbnails = false
+switcher.ui.showSelectedTitle = false
 switcher.ui.fontName = 'JetBrains Mono'
 
 -- bind to hotkeys; WARNING: at least one modifier key is required!

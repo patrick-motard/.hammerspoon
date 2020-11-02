@@ -5,6 +5,8 @@ My Hammerspoon configuration
 
 Before running, open `init.lua` in your editor and commend/uncomment the modules that you want. Note, if you want to use `gcal`, it takes addition setup, outlined below.
 
+You can launch Hammerspoon from spotlight. Once Hammerspoon is running, you can view a list of shortcuts by typing 'alt+h'.
+
 ## TODO
 - [gcal menu](https://kevzheng.com/hammerspoon-karabiner)
 -- DONE: implemented with personal calendar

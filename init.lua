@@ -13,7 +13,7 @@ hs.loadSpoon("KSheet")
 hs.loadSpoon("SpoonInstall")
 Install = spoon.SpoonInstall
 spaces = require("hs._asm.undocumented.spaces")
--- spoon.ReloadConfiguration:start()
+spoon.ReloadConfiguration:start()
 
 -- START OPTIONAL SETTINGS
 --
@@ -50,7 +50,7 @@ end
 
 hs.hotkey.bind(hyper, "r", 'Reload Hammerspoon', function()
   hs.reload()
-  notify('Reloading Hammerspoon.', 'Notice')
+  -- notify('Reloading Hammerspoon.', 'Notice')
 end)
 
 Install:andUse("Caffeine",
@@ -64,6 +64,15 @@ Install:andUse("Caffeine",
 --   text = current_space .. space_name
 --   hs.notify.new({title="current space", informativeText=space_name}):send()
 -- end)
+
+Install:andUse("FadeLogo",
+  {
+    config = {
+      default_run = 1.0,
+    },
+    start = true
+  }
+)
 
 function main()
   space_id = spaces.activeSpace()
