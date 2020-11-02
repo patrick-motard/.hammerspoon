@@ -7,6 +7,19 @@ Before running, open `init.lua` in your editor and commend/uncomment the modules
 
 You can launch Hammerspoon from spotlight. Once Hammerspoon is running, you can view a list of shortcuts by typing 'alt+h'.
 
+## Install
+Install hammerspoon:
+
+```
+brew isntall hammerspoon
+```
+
+clone the repo and symlink it to your hammerspoon repo
+
+```
+ln -s ~/code/dot-hammerspoon ~/.hammerspoon
+```
+
 ## TODO
 - [gcal menu](https://kevzheng.com/hammerspoon-karabiner)
 -- DONE: implemented with personal calendar

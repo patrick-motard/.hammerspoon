@@ -33,6 +33,8 @@ switcher = hs.window.switcher.new() -- default windowfilter: only visible window
 switcher_space = hs.window.switcher.new(hs.window.filter.new():setCurrentSpace(true):setDefaultFilter{}) -- include minimized/hidden windows, current Space only
 -- switcher_browsers = hs.window.switcher.new{'Safari','Google Chrome'} -- specialized switcher for your dozens of browser windows :)
 
+-- Fields that can be customized on the switcher ui can be found here:
+-- https://www.hammerspoon.org/docs/hs.window.switcher.html#ui
 switcher.ui.textsize = 10
 switcher.ui.showThumbnails = false
 switcher.ui.showSelectedTitle = false
