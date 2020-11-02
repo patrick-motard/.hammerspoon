@@ -2,6 +2,7 @@
 hyper = { "cmd", "alt" }
 meh = { "alt", "shift", "ctrl" }
 cmd = { "cmd" }
+ctrl = { "ctrl" }
 leader = { 'alt' }
 PYTHON_BINARY = '/usr/local/bin/python3'
 cwd = os.getenv("HOME") .. "/.hammerspoon/"
@@ -15,17 +16,29 @@ spaces = require("hs._asm.undocumented.spaces")
 -- spoon.ReloadConfiguration:start()
 
 -- START OPTIONAL SETTINGS
--- ///////////////////////
+--
 -- Uncomment when debugging:
 -- Install.use_syncinstall = true
 -- hs.window.animationDuration = 0
--- \\\\\\\\\\\\\\\\\\\\\\
+--
 -- END OPTIONAL SETTINGS
-require 'src/scripts/test'
+
+
+-- START OPTIONAL MODULES
+-- Comment/uncomment modules to enable/disable.
+
+-- Keybinds in 'application' allow you to focus/open apps quickly.
 require 'src/application'
+-- Keybinds in 'window' allow moving windows/apps around on screen
+-- and between screens.
 require 'src/window'
+-- Keybind in 'help' enable help menus.
 require 'src/help'
-require 'src/gcal'
+-- Gcal adds a google calendar menubar
+-- require 'src/gcal'
+-- connect_to_vpn = require 'src/connect_to_vpn'
+-- END OPTIONAL MODULES
+
 
 -- TODO: Get VPN Connection working
 -- require 'scripts/connect_to_vpn'
@@ -40,9 +53,11 @@ hs.hotkey.bind(hyper, "r", 'Reload Hammerspoon', function()
   notify('Reloading Hammerspoon.', 'Notice')
 end)
 
+Install:andUse("Caffeine",
+  { hotkeys = { toggle = { hyper, "c" }}, start = true}
+)
 
 -- START WORK IN PROGRESS
-
 -- hs.hotkey.bind(hyper, "r", 'wip', function()
 --   current_space = spaces.activeSpace()
 --   space_name = spaces.spaceName(current_space)

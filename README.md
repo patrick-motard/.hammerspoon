@@ -3,6 +3,7 @@ My Hammerspoon configuration
 
 ⌘ ⌥ ⇧ ⌃ ⇪ Fn ⟵ ⟶ ↑ ↓
 
+Before running, open `init.lua` in your editor and commend/uncomment the modules that you want. Note, if you want to use `gcal`, it takes addition setup, outlined below.
 
 ## TODO
 - [gcal menu](https://kevzheng.com/hammerspoon-karabiner)
