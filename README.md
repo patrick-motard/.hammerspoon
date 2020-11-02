@@ -14,7 +14,7 @@ Install hammerspoon:
 brew isntall hammerspoon
 ```
 
-clone the repo and symlink it to your hammerspoon repo
+clone the repo and symlink it to your hammerspoon configuration folder.
 
 ```
 ln -s ~/code/dot-hammerspoon ~/.hammerspoon
