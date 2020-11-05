@@ -11,7 +11,7 @@ You can launch Hammerspoon from spotlight. Once Hammerspoon is running, you can 
 Install hammerspoon:
 
 ```
-brew isntall hammerspoon
+brew install hammerspoon
 ```
 
 clone the repo and symlink it to your hammerspoon configuration folder.

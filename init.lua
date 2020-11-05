@@ -19,7 +19,7 @@ spoon.ReloadConfiguration:start()
 --
 -- Uncomment when debugging:
 -- Install.use_syncinstall = true
--- hs.window.animationDuration = 0
+hs.window.animationDuration = 0
 --
 -- END OPTIONAL SETTINGS
 
@@ -35,7 +35,7 @@ require 'src/window'
 -- Keybind in 'help' enable help menus.
 require 'src/help'
 -- Gcal adds a google calendar menubar
--- require 'src/gcal'
+require 'src/gcal'
 -- connect_to_vpn = require 'src/connect_to_vpn'
 -- END OPTIONAL MODULES
 
